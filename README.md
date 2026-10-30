@@ -14,7 +14,7 @@
 1. Create a new public GitHub Gist (https://gist.github.com/)
 1. Create a token with the `gist` scope and copy it. (https://github.com/settings/tokens/new)
 1. Create a WakaTime account (https://wakatime.com/signup)
-1. In your account settings, copy the existing WakaTime API Key (https://wakatime.com/settings/account)
+1. Create a personal OAuth token at https://wakatime.com/oauth
 
 ### Project setup
 
@@ -22,23 +22,10 @@
 2. Go to the repo **Settings > Secrets**
 3. Add the following environment variables:
    - **GH_TOKEN:** The GitHub token generated above.
-   - **WAKATIME_API_KEY:** The API key for your WakaTime account.
+   - **WAKATIME_API_KEY:** Your personal WakaTime OAuth token.
    - **GIST_ID:** The ID portion from your gist url: `https://gist.github.com/superman66/`**`75f3b2ec23c7f69594ca3d9e8b7ea81d`**..
 4. Run workflow manually. Because workflows aren’t being run on forked repository.
 
-
-### Push Daily Report to Wechat
-
-if you are using Wechat, you can use **ServerChan(http://sc.ftqq.com/)** to push wakatime daily report to your Wechat.
-
-#### Settting
-
-1. Create a ServerChan account (https://sct.ftqq.com/)
-2. Copy SCKEY (https://sct.ftqq.com/sendkey)
-3. Bind your micromessage in ServerChan
-4. Add SCKEY to repo **Secrets**: **SCU_KEY**
-
-after that, you will receive Wakatime daily report everyday.
 
 <p align="center">
   <img width="400" src="./screenshot/daily-report.jpg">
